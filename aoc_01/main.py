@@ -5,7 +5,8 @@ dir_path = os.path.dirname(abs_path)
 
 with open(f"{dir_path}/input.txt") as f:
     lines = f.readlines()
-    left_list, right_list = zip(*(map(int, line.split()) for line in lines))
+
+left_list, right_list = zip(*(map(int, line.split()) for line in lines))
 
 ordered_left = sorted(left_list)
 ordered_right = sorted(right_list)
